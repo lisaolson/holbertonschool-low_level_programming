@@ -6,7 +6,7 @@
  */
 int main(void)
 
-int;;
+int;
 
 {
 	printf("Size of a char: %d byte(s)\n", int);
