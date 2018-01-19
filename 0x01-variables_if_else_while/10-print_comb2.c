@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - Entry point
+ *
+ * Return: Always 0 (Success)
+ */
 int main(void) {
 
         int n = 48;
@@ -11,11 +16,18 @@ int main(void) {
 		putchar(ntwo);
 		n++;
 		ntwo++;
-                	if(n!=57)
+                	if(n!=57 && ntwo!=57)
                 	{
                         	putchar(',');
                         	putchar(' ');
-                	}
+                	} else {
+			n++;
+			ntwo++;
+			}
+		}
+		if (n!=57 && ntwo!=57) {
+			n++;
+			ntwo++;	
 		}		
 	}
         putchar('\n');
