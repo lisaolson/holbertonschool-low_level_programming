@@ -4,13 +4,19 @@ int main(void) {
 	
 	int n = 48;
 
-	while ( n < 57 ) {
+	while (n < 58) {
 		putchar(n);
-		putchar(',');
-		putchar(' ');
-		n++;
+		if(n!=57) 
+		{
+			n++;
+			putchar(',');
+                	putchar(' ');
+		} 
+		else
+		{
+			n++;
+		}
 	}
-	putchar('9');
 	putchar('\n');
 	return 0;
 }
