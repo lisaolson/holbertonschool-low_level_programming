@@ -3,17 +3,20 @@
 int main(void)
 
 {
-        char ch = 'a';
+	char ch = 'a';
+
 	char chH = 'A';
 
-        while( ch <= 'z') {
-                putchar(ch);
-                ch++;
-        }
-	while(chH <= 'Z') {
+	while (ch <= 'z')
+	{
+		putchar(ch);
+		ch++;
+	}
+	while (chH <= 'Z')
+	{
 		putchar(chH);
 		chH++;
 	}
-        putchar('\n');
-        return (0);
+	putchar('\n');
+	return (0);
 }
