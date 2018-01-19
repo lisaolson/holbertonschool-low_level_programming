@@ -8,9 +8,9 @@
 int main(void)
 {
 
-	char a;
+	int a;
 
-	char b;
+	int b;
 
 	for (a = '0'; a <= '9'; a++)
 	{
