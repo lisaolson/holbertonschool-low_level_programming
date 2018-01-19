@@ -7,29 +7,19 @@
  */
 int main(void) {
 
-        int n = 48;
-	int ntwo = 48;
+	char a;
+	char b;
 
-        while (n < 58) {
-		while (ntwo < 58) {
-		putchar(n);
-		putchar(ntwo);
-		n++;
-		ntwo++;
-                	if(n!=57 && ntwo!=57)
-                	{
-                        	putchar(',');
-                        	putchar(' ');
-                	} else {
-			n++;
-			ntwo++;
+	for(a = '0'; a <= '9'; a++) { 
+		for (b ='0'; b <= '9'; b++) {
+			putchar(a);
+			putchar(b);
+			if (!(a == '9' && b == '9')) {
+				putchar(',');
+				putchar(' ');
 			}
 		}
-		if (n!=57 && ntwo!=57) {
-			n++;
-			ntwo++;	
-		}		
 	}
-        putchar('\n');
-        return 0;
+	putchar('\n'); 
+	return (0);
 }
