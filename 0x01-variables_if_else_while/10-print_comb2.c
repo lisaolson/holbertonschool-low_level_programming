@@ -1,17 +1,23 @@
+#include <stdio.h>
 
-int main(void) 
+int main(void) {
 
-{
-	int n = 48;
-		
-	while ( n < 58 ) {
+        int n = 48;
+	int ntwo = 48;
+
+        while (n < 58) {
+		while (ntwo < 58) {
 		putchar(n);
+		putchar(ntwo);
 		n++;
-		putchar(',');
-		putchar(' ');
+		ntwo++;
+                	if(n!=57)
+                	{
+                        	putchar(',');
+                        	putchar(' ');
+                	}
+		}		
 	}
-	putchar('0');
-	putchar('\n');
-	return 0;
-
+        putchar('\n');
+        return 0;
 }
