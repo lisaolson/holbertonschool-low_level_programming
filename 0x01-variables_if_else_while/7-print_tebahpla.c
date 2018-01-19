@@ -3,13 +3,15 @@
 int main(void)
 
 {
-        char ch;
-        ch = 'z';
+	char ch;
 
-        while( ch >= 'a') {
-                putchar(ch);
-                ch--;
-        }
-        putchar('\n');
-        return (0);
+	ch = 'z';
+
+	while (ch >= 'a')
+	{
+		putchar(ch);
+		ch--;
+	}
+	putchar('\n');
+	return (0);
 }
