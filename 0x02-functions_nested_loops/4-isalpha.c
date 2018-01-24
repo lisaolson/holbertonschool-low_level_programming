@@ -2,7 +2,7 @@
 
 /**
  * _isalpha - checks for alphabetic character
- *
+ * @c: First member
  * Return: Always 0.
  */
 int _isalpha(int c)
