@@ -9,7 +9,7 @@ void more_numbers(void)
 {
 int row;
 int col;
-	for (col = 0; col < 11; col++)
+	for (col = 0; col < 10; col++)
 	{
 		for (row = 0; row < 15; row++)
 		{
