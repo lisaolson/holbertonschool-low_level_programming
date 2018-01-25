@@ -13,7 +13,7 @@ int col;
 	{
 		for (row = 0; row < 15; row++)
 		{
-			if (row > 10)
+			if (row >= 10)
 			{
 				_putchar(row / 10 + '0');
 			}
