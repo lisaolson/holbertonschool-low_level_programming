@@ -3,7 +3,7 @@
 /**
  * mul - multiplies two integers
  * @a: int for value a
- * #b: int for value b
+ * @b: int for value b
  * Return: Always 0.
  */
 
