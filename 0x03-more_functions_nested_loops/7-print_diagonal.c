@@ -12,17 +12,17 @@ int a;
 
 int b;
 	a = 0;
-	while (a <= n)
+	while (a < n)
 	{
-		_putchar('\\');
-		_putchar('\n');
-		b = 0;
-		while (b <= a)
+	b = 0;
+		while (b < a)
 		{
 			_putchar(' ');
 			b++;
 		}
+		_putchar('\\');
+		_putchar('\n');
 	a++;
 	}
-_putchar('\n');
+	_putchar('\n');
 }
