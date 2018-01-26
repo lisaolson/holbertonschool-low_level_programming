@@ -14,7 +14,7 @@ int b;
 	a = 0;
 	while (a < n)
 	{
-	b = 0;
+		b = 0;
 		while (b < a)
 		{
 			_putchar(' ');
@@ -22,7 +22,8 @@ int b;
 		}
 		_putchar('\\');
 		_putchar('\n');
-	a++;
+		a++;
 	}
-	_putchar('\n');
+	if (n <= 0)
+		_putchar('\n');
 }
