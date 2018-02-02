@@ -15,11 +15,11 @@ int c;
 	while (src[c] != '\0')
 	{
 		dest[c] = src[c];
-		c++;
 		for (; c < n; c++)
 		{
 			dest[c] = '\0';
 		}
+		c++;
 	}
 	return (dest);
 }
