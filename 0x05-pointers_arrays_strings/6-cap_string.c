@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * cap_string - capitalize all words of a string
+ * *cap_string - capitalize all words of a string
  * @s: pointer s
  * Return: Always 0.
  */
@@ -18,7 +18,7 @@ int i = 0;
 		s[i] == '.' ||
 		s[i] == '!' ||
 		s[i] == '?' ||
-		s[i] == '\"' ||
+		s[i] == '"' ||
 		s[i] == '(' ||
 		s[i] == ')' ||
 		s[i] == '{' ||
