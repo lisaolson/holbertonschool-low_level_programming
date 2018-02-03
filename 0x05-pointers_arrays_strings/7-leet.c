@@ -1,14 +1,14 @@
 #include "holberton.h"
 
 /**
- * leet - encode string into 1337
+ * *leet - encode string into 1337
  * @s: pointer s
  * Return: Always 0.
  */
 char *leet(char *s)
 {
-char num[] = {'4', '3', '0', '7', '1', '4', '3', '7', '0', '1'};
-char let[] = {'a', 'e', 'o', 't', 'l', 'A', 'E', 'O', 'T', 'L'};
+char num[] = "4307143701";
+char let[] = "aeotlAEOTL";
 
 int i;
 int j;
