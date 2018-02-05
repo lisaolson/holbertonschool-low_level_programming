@@ -11,6 +11,5 @@ int i;
 
 	for (i = 0; s[i] != '\0' && s[i] != c; i++)
 		s++;
-	s++;
-	return (s);
+	return (s + 1);
 }
