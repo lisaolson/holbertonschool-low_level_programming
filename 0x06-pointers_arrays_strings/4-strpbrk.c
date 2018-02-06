@@ -2,7 +2,7 @@
 /**
  * *_strpbrk - searches string for any set of bytes
  * @s: pointer s variable
- * accept - pointer accept variable
+ * @accept: pointer accept variable
  * Return: Always 0.
  */
 char *_strpbrk(char *s, char *accept)
