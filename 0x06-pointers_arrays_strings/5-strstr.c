@@ -14,6 +14,8 @@ int i, j;
 	{
 		for (j = 0; haystack[i + j] == needle[j]; j++)
 		{
+			if (needle[0] == '\0')
+				return (haystack);
 			if (needle[j + 1] == '\0')
 			{
 				haystack += i;
