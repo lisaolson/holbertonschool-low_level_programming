@@ -1,12 +1,10 @@
 #include "holberton.h"
 /**
  * square - function to calculate square of number
- * @y: int y representing n
+ * @y: square`
  * @x: int x to iterate through squares
- *
- * _sqrt_recursion - returns natural square root of a number
- * Return: Always 0.
- */
+ * Return: squareroot of n
+*/
 
 int square(int y, int x)
 {
@@ -17,6 +15,11 @@ int square(int y, int x)
 	return (square(y, x + 1));
 }
 
+/**
+ * _sqrt_recursion - returns natural square root of a number
+ * @n: number
+ * Return: Always 0.
+*/
 int _sqrt_recursion(int n)
 {
 	if (n == 0 || n == 1)
