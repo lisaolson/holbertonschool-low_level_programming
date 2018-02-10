@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include "holberton.h"
 
+/**
+ * main - main function
+ * @argc: argument count
+ * @argv: vector array
+ * Return: 0
+*/
 int main(int argc, char *argv[])
 {
 int i;
