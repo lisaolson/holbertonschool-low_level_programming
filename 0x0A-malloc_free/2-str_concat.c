@@ -13,10 +13,16 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j, total, len1, len2;
 
 	if (s1 == NULL)
+	{
+		s1 = malloc(sizeof(char));
 		*s1 = '\0';
+	}
 
 	if (s2 == NULL)
+	{
+		s2 = malloc(sizeof(char));
 		*s2 = '\0';
+	}
 	i = 0;
 	while (s1[i] != '\0')
 	{
