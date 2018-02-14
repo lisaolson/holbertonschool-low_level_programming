@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include "holberton.h"
 
 /**
@@ -17,8 +16,16 @@ char *_strdup(char *str)
 		len = a;
 		a++;
 	}
-        newstr = malloc(len * sizeof(char));
+	if (len == 0)
+	{
+		return (NULL);
+	}
+	newstr = malloc((len + 1) * sizeof(char));
 	if (newstr == NULL)
+	{
+		return (NULL);
+	}
+	if (newstr == '\0')
 	{
 		return (NULL);
 	}
