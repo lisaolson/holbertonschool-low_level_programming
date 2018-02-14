@@ -13,7 +13,10 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j, total, len1, len2;
 
 	if (s1 == NULL)
-		return (NULL);
+		*s1 = '\0';
+
+	if (s2 == NULL)
+		*s2 = '\0';
 	i = 0;
 	while (s1[i] != '\0')
 	{
@@ -27,9 +30,9 @@ char *str_concat(char *s1, char *s2)
 		j++;
 	}
 	total = len1 + len2;
-	if (total == 0)
-		return (NULL);
 	ar = malloc((total + 1) * sizeof(char));
+	if (ar == NULL)
+		return (NULL);
 
 	i = 0;
 	while (s1[i] != '\0')
