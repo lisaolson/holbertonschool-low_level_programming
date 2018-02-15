@@ -11,26 +11,17 @@ char *_strdup(char *str)
 	unsigned int i, len, a;
 	char *newstr;
 
+	if (str == NULL)
+		return (NULL);
 	a = 0;
 	while (str[a] != '\0')
 	{
 		len = a;
 		a++;
 	}
-	if (len == 0)
-	{
-		return (NULL);
-	}
 	newstr = malloc((len + 1) * sizeof(char));
 	if (newstr == NULL)
-	{
 		return (NULL);
-	}
-	if (newstr == '\0')
-	{
-		return (NULL);
-	}
-	i = 0;
 	while (i <= len)
 	{
 		newstr[i] = str[i];
