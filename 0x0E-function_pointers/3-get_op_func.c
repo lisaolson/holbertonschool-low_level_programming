@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include "function_pointers.h"
+#include <string.h>
 
 /**
  * get_op_function - selects correct function to
@@ -18,4 +18,7 @@ int (*get_op_func(char *s))(int, int)
 	};
 	int i;
 
+	while (ops[i].op && strcmp(ops[i].op, s) != 0)
+		i++;
+	return (ops[i].f);
 }
