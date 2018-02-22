@@ -1,5 +1,4 @@
 #include "3-calc.h"
-#include "function_pointers.h"
 
 /**
  * main - Entry point
