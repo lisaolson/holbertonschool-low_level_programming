@@ -2,6 +2,10 @@
 #include "function_pointers.h"
 
 /**
+ * main - Entry point
+ * @argc: number of items in argv
+ * @argv: array of strings
+ * Return: result of operator functions; int
 */
 int main(int argc, char *argv[])
 {

@@ -2,8 +2,8 @@
 #include <string.h>
 
 /**
- * get_op_function - selects correct function to
- * perform operation
+ * get_op_func - selects correct function to pass to main
+ * @s: character s indicating operator
  * Return: integer
 */
 int (*get_op_func(char *s))(int, int)
