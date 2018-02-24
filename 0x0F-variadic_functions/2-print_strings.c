@@ -22,11 +22,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		if (i == 0)
 		{
-			printf("%s%s", va_arg(ap, char*), separator); 
+			printf("%s", va_arg(ap, char*)); 
 		}
 		else
 		{
-			printf("%s", va_arg(ap, char*));
+			printf("%s%s", separator, va_arg(ap, char*));
 		}
 	}
 	va_end(ap);
