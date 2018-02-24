@@ -22,7 +22,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		}
 		if (i == 0)
 		{
-			printf("%s", va_arg(ap, char*)); 
+			printf("%s", va_arg(ap, char*));
 		}
 		else
 		{
