@@ -28,17 +28,11 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			string = "(nil)";
 
 		if (separator == NULL)
-		{
 			printf("%s", string);
-		}
 		if (i == 0)
-		{
 			printf("%s", string);
-		}
 		else
-		{
 			printf("%s%s", separator, string);
-		}
 	}
 	va_end(ap);
 	putchar('\n');
