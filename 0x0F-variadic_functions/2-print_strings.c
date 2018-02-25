@@ -29,11 +29,14 @@ void print_strings(const char *separator, const unsigned int n, ...)
 
 		if (separator == NULL)
 			printf("%s", string);
-		if (i == 0)
-			printf("%s", string);
 		else
-			printf("%s%s", separator, string);
+		{
+			if (i == 0)
+				printf("%s", string);
+			else
+				printf("%s%s", separator, string);
+		}
 	}
-	va_end(ap);
 	putchar('\n');
+	va_end(ap);
 }
