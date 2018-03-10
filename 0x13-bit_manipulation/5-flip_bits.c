@@ -13,7 +13,7 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 	int a = 0;
 
 	total = n ^ m;
-	while (a < 63)
+	while (a < 64)
 	{
 		i += (total & 1);
 		total = total >> 1;
