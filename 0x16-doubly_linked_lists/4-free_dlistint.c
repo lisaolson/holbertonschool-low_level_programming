@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * free_dlistint - frees list
+ * free_dlistint - frees doubly linked list
  * @head: pointer to head node
  * Return: Nothing
 */
@@ -15,4 +15,5 @@ void free_dlistint(dlistint_t *head)
 		head = head->next;
 		free(last);
 	}
+	free(head);
 }
