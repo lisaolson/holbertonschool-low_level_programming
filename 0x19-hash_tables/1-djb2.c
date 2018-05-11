@@ -4,7 +4,7 @@
  * hash_djb2 - implements the djb2 algorithm
  * @str: string to insert
  *
- * Returns: 
+ * Return: hash
 */
 unsigned long int hash_djb2(const unsigned char *str)
 {
