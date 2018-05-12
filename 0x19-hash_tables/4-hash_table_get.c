@@ -9,14 +9,24 @@
 */
 char *hash_table_get(const hash_table_t *ht, const char *key)
 {
-	unsigned int index;
 	unsigned int size;
+	unsigned int index;
+
+	if (ht == NULL)
+		return (NULL);
+	if (key == NULL)
+		return (NULL);
 
 	size = ht->size;
-
 	index = key_index((const unsigned char *)key, size);
 
-	printf("%u\n", index);
-
-	return (0);
+	while (ht->array[index] != NULL)
+	{
+		if (strcmp(ht->array[index]->key, key) == 0)
+		{
+			return (ht->array[index]->value);
+		}
+		ht->array[index] = ht->array[index]->next;
+	}
+	return (NULL);
 }
