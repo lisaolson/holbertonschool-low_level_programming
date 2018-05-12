@@ -39,14 +39,15 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		return (1);
 	}
 
-	while (ht->array[index] != NULL)
+	temp = ht->array[index];
+	while (temp != NULL)
 	{
-		if (strcmp(ht->array[index]->key, key) == 0)
+		if (strcmp(temp->key, key) == 0)
 		{
-			ht->array[index]->value = strdup(value);
+			temp->value = strdup(value);
 			return (1);
 		}
-		ht->array[index] = ht->array[index]->next;
+		temp = temp->next;
 	}
 	temp = ht->array[index];
 	ht->array[index] = new;
