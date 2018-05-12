@@ -4,6 +4,7 @@
  * hash_table_set - adds an element to the hash table
  * @ht: hash table to add or update the key/value to
  * @value: value associated with the key
+ * @key: key to insert
  *
  * Return: 1 if succeeded, 0 if failed
 */
@@ -13,6 +14,11 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	unsigned int size = 0;
 	hash_node_t *new;
 	hash_node_t *temp;
+
+	if (ht == NULL)
+		return (0);
+	if (ht->size == 0)
+		return (0);
 
 	size = ht->size;
 	if (key[0] == '\0' || key == NULL)
