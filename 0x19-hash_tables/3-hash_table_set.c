@@ -17,14 +17,12 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	if (ht == NULL)
 		return (0);
-	if (ht->size == 0)
-		return (0);
 
 	size = ht->size;
-	if (key[0] == '\0' || key == NULL)
+	if (key == NULL)
 		return (0);
 
-	if (value[0] == '\0' || value == NULL)
+	if (value == NULL)
 		return (0);
 
 	index = key_index((const unsigned char *)key, size);
@@ -55,6 +53,5 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	ht->array[index]->key = strdup(key);
 	ht->array[index]->value = strdup(value);
 	ht->array[index]->next = temp;
-
 	return (1);
 }
