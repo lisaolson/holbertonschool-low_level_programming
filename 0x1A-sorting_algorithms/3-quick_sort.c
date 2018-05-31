@@ -41,6 +41,10 @@ int partition(int *array, int left, int right, size_t size)
 			temp = array[i];
 			array[i] = array[j];
 			array[j] = temp;
+			if (i != j)
+			{
+				print_array(array, size);
+			}
 		}
 	}
 	temp2 = array[i + 1];
