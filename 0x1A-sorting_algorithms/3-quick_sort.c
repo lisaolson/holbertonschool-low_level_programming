@@ -10,6 +10,7 @@
 void sort(int *array, int left, int right, size_t size)
 {
 	int index;
+
 	if (left < right)
 	{
 		index = partition(array, left, right, size);
