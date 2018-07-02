@@ -32,11 +32,5 @@ The goal for this project is to gain familiarity with creating, using, and under
 | 17-binary_tree_sibling.c | Finds the sibling of a node |
 | 18-binary_tree_uncle.c | Finds the uncle of a node |
 
-### Examples
-``` ./hsh
-$ ./console.py
-(hbnb)
-(hbnb) help
-
 #### Authors
 Isaac Wong, Lisa Olson
