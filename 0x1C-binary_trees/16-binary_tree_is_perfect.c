@@ -1,27 +1,24 @@
 #include "binary_trees.h"
+#include <math.h>
 
 /**
- * binary_tree_is_full - checks if a binary tree is full
+ * binary_tree_leaves - counts the leaves in a binary tree
  * @tree: pointer to the root node of the tree
  *
- * Return: 0 if tree is NULL or not full, 1 if it is
+ * Return: size_t number of leaves or 0
 */
 
-int binary_tree_is_full(const binary_tree_t *tree)
+size_t binary_tree_leaves(const binary_tree_t *tree)
 {
-	if (tree == NULL)
-		return (0);
+        if (tree == NULL)
+                return (0);
 
-	if (tree->right == NULL && tree->left == NULL)
-		return (1);
-
-	if (tree->right != NULL && tree->left != NULL)
-	{
-		return (binary_tree_is_full(tree->left) &&
-			binary_tree_is_full(tree->right));
-	}
-
-	return (0);
+        /* Check for leaf */
+        if (tree->left == NULL && tree->right == NULL)
+                return (binary_tree_leaves(tree->left) +
+                        binary_tree_leaves(tree->right) + 1);
+        else
+                return (binary_tree_leaves(tree->left) + binary_tree_leaves(tree->right));
 }
 
 /**
@@ -34,10 +31,10 @@ int binary_tree_is_full(const binary_tree_t *tree)
 
 size_t max(size_t left, size_t right)
 {
-	if (left > right)
-		return (left);
-	else
-		return (right);
+        if (left > right)
+                return (left);
+        else
+                return (right);
 }
 
 /**
@@ -49,39 +46,38 @@ size_t max(size_t left, size_t right)
 
 size_t binary_tree_height(const binary_tree_t *tree)
 {
-	if (tree == NULL)
-		return (0);
+        if (tree == NULL)
+                return (0);
 
-	if (tree->left == NULL && tree->right == NULL)
-		return (1);
-
-	return (max(binary_tree_height(tree->left),
-		binary_tree_height(tree->right)) + 1);
+/*
+ *        if (tree->left == NULL && tree->right == NULL)
+ *               return (0);
+*/
+        return (max(binary_tree_height(tree->left),
+                binary_tree_height(tree->right)) + 1);
 }
 
 /**
- * binary_tree_balance - measures the balance factor of a binary tree
- * @tree: pointer to the root node of the tree
+ * power - manual pow function
+ * @exponent: exponent
  *
- * Return: int balance factor or 0
+ * Return: Returns a to the power of b
 */
 
-int binary_tree_balance(const binary_tree_t *tree)
+int power(int exponent)
 {
-	const binary_tree_t *cursor_left;
-	const binary_tree_t *cursor_right;
-	int right = 0, left = 0;
+	int result = 1;
 
-	if (tree == NULL)
+	if (exponent == 0)
 		return (0);
 
-	cursor_left = tree;
-	cursor_right = tree;
+	while (exponent != 0)
+	{
+		result *= 2;
+		exponent--;
+	}
 
-	right = binary_tree_height(cursor_right->right);
-	left = binary_tree_height(cursor_left->left);
-
-	return (left - right);
+	return (result);
 }
 
 /**
@@ -93,10 +89,22 @@ int binary_tree_balance(const binary_tree_t *tree)
 
 int binary_tree_is_perfect(const binary_tree_t *tree)
 {
+	int leaves;
+	int height;
+
 	if (tree == NULL)
 		return (0);
 
-	if (binary_tree_is_full(tree) == 1 && binary_tree_balance(tree) == 0)
+	if (tree->left == NULL && tree->right == NULL)
+		return (1);
+
+	/* otherwise, count number of leaves */
+	/* calculate 2 to the depth */
+	/* if it's equal to number of leaves, then it's perfect */
+
+	leaves = binary_tree_leaves(tree);
+	height = binary_tree_height(tree) - 1;
+	if (leaves == power(height))
 		return (1);
 
 	return (0);
