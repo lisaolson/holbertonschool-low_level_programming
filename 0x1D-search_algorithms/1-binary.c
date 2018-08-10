@@ -1,12 +1,12 @@
 #include "search_algos.h"
 
 /**
- * binary_search - searches for value in sorted array
+ * print_array - prints array
  * @array: pointer to first element of array to search
- * @size: number of elements in array
- * @value: value to search for
+ * @left: 1st index of sub-array
+ * @right: 2nd index of sub-array
  *
- * Return: First index where value is located or -1
+ * Return: void
 */
 
 void print_array(int *array, size_t left, size_t right)
@@ -26,6 +26,15 @@ void print_array(int *array, size_t left, size_t right)
 	}
 	printf("\n");
 }
+
+/**
+ * binary_search - searches for value in sorted array
+ * @array: pointer to first element of array to search
+ * @size: number of elements in array
+ * @value: value to search for
+ *
+ * Return: First index where value is located or -1
+*/
 
 int binary_search(int *array, size_t size, int value)
 {
