@@ -35,6 +35,7 @@ The goal for this project is to learn conditionals, operators and loops in C.
 | 10-add.c | Adds two integers and returns the result |
 
 ### Installation
+
 ```git clone git@github.com:lisaolson/holbertonschool-low_level_programming.git```
 
 Compilation
@@ -42,6 +43,7 @@ Compilation
 ```gcc -Wall -pedantic -Werror -Wextra [*.c]```
 
 ### Usage
+
 ```./[file name]```
 
 #### Author
