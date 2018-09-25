@@ -1,29 +1,31 @@
+# Low Level Programming
+This repo contains a series of low level projects I completed in C at Holberton School.
 
+### Concepts
+- Compilation
+- Conditionals, Operators, Loops
+- Functions
+- Pointers, Double Pointers, Function Pointers
+- Arrays and Matrices
+- Static and Dynamic Libraries
+- Stack and Heap
+- Memory Allocation
+- Binary Operations
 
-[0x00](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x00-hello_world)
-[0x01](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x01-variables_if_else_while)
-[0x02](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x02-functions_nested_loops)
-[0x03](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x03-more_functions_nested_loops)
-[0x04](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x04-pointers_arrays_strings)
-[0x05](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x05-pointers_arrays_strings)
-[0x06](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x06-pointers_arrays_strings)
-[0x06](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x06-pointers_arrays_strings)
-[0x07](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x07-recursion)
-[0x08](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x08-static_libraries)
-[0x09](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x09-argc_argv)
-[0x10](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x0A-malloc_free)
-[0x11](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x0B-more_malloc_free)
-[0x0A](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x0A-malloc_free)
-[0x0B](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x0B-more_malloc_free)
-[0x0C](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x0C-preprocessor)
-[0x0D](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x0D-structures_typedef)
-[0x0E](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x0E-function_pointers)
-[0x0F](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x0F-variadic_functions)
-[0x11](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x11-singly_linked_lists)
-[0x12](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x12-more_singly_linked_lists)
-[0x13](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x13-bit_manipulation)
-[0x14](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x14-file_io)
-[0x16](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x16-doubly_linked_lists)
-[0x17](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x17-dynamic_libraries)
-[0x18](https://github.com/lisaolson/monty/tree/fd5d0b7179838fb85eedd3ff75fb305ddfa52a19)
-[0x19](https://github.com/lisaolson/holbertonschool-low_level_programming/tree/master/0x19-hash_tables)
+### Requirements
+- gcc 4.8.4
+- Ubuntu 14.04 LTS
+- Flags -Wall -Werror -Wextra -pedantic
+
+### Installation
+git clone the directory
+```git clone https://github.com/lisaolson/[Project Directory]```
+
+Compile
+```gcc -Wall -Werror -Wextra -pedantic *.c -o [c files]```
+
+### Usage
+```./[executable file]```
+
+#### Author
+Lisa Olson | @eunoia_lo
