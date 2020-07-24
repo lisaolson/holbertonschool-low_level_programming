@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "clo.h"
 /**
  * *_strchr - locates a character in a string
  * @s: pointer s

@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "clo.h"
 
 /**
  * print_diagonal - draw diagonal line

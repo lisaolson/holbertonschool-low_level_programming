@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "clo.h"
 /**
  * factorial - return factorial of a given number
  * @n: given number to receive factorial of

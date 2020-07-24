@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "clo.h"
 
 /**
  * clear_bit - sets value of a bit to 0 at given index

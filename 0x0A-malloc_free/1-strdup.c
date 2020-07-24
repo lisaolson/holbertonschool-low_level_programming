@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "holberton.h"
+#include "clo.h"
 
 /**
  * *_strdup - returns pointer containing copy of a string

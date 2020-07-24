@@ -1,7 +1,7 @@
 CC=gcc
-SRC=holberton.c main.c
+SRC=clo.c main.c
 OBJ=$(SRC:.c=.o)
-NAME=holberton
+NAME=clo
 
 all: ${OBJ}
 		${CC} ${OBJ} -o ${NAME}

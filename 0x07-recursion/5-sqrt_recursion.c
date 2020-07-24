@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "clo.h"
 /**
  * square - function to calculate square of number
  * @y: square`

@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "clo.h"
 /**
  * prime - checks for prime number
  * @x: int x

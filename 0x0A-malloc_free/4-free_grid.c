@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "holberton.h"
+#include "clo.h"
 
 /**
  * free_grid - free a 2-D grid

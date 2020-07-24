@@ -22,7 +22,7 @@ The goal for this project is to learn conditionals, operators and loops in C.
 ### File Descriptions
 | File | Description |
 | ------------- |:-------------:|
-| 0-holberton.c | Prints Holberton with new line |
+| 0-clo.c | Prints Holberton with new line |
 | 1-alphabet.c | Prints the alphabet in lowercase |
 | 2-print_alphabet_x10.c | Prints the alphabet 10 times |
 | 3-islower.c | Checks for lowercase character |
@@ -36,7 +36,7 @@ The goal for this project is to learn conditionals, operators and loops in C.
 
 ### Installation
 
-```git clone git@github.com:lisaolson/holbertonschool-low_level_programming.git```
+```git clone git@github.com:lisaolson/closchool-low_level_programming.git```
 
 Compilation
 

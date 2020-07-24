@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "clo.h"
 
 /**
  * _islower - prints the alphabet 10 times in lowercase

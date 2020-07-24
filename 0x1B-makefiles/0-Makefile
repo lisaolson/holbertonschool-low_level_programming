@@ -1,5 +1,5 @@
-all: holberton
+all: clo
 
-holberton: holberton.c m.h main.c
-		gcc -o holberton holberton.c main.c
+clo: clo.c m.h main.c
+		gcc -o clo clo.c main.c
 

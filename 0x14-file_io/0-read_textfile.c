@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "clo.h"
 
 /**
  * read_textfile - reads a text file and prints to POSIX

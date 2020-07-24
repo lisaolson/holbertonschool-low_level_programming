@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "clo.h"
 /**
  * _strspn - finds length of a prefix substring
  * @s: pointer s
